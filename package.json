@@ -1,0 +1,33 @@
+{
+  "name": "gearbox",
+  "version": "0.0.1",
+  "description": "Chrome plugins sandbox",
+  "scripts": {
+    "pack": "webpack --display-modules --progress --colors --release",
+    "watchdog": "webpack --display-modules --progress --colors --watch --watch-poll --verbose",
+    "install:webpack": "npm link webpack",
+    "install:typings": "npm link typings",
+    "install:global": "npm run install:webpack && npm run install:typings"
+  },
+  "author": "ankhzet@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0",
+    "nedb": "^1.8.0",
+    "react": "^15.3.1",
+    "react-codemirror": "^0.2.6",
+    "react-dom": "^15.3.1",
+    "react-lite": "^0.15.17",
+    "react-router": "^2.8.1"
+  },
+  "devDependencies": {
+    "component-inspector": "^1.4.0",
+    "webpack": "latest",
+    "css-loader": "latest",
+    "file-loader": "latest",
+    "style-loader": "latest",
+    "url-loader": "latest",
+    "watch-ignore-webpack-plugin": "^1.0.0"
+  }
+}
